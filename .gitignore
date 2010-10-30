@@ -1,0 +1,8 @@
+[Bb]in
+[Oo]bj
+*.suo
+*.user
+_ReSharper*
+*.orig
+.DS_Store?
+Thumbs.db

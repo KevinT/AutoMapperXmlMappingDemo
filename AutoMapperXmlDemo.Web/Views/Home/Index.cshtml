@@ -1,0 +1,22 @@
+﻿@model IEnumerable<AutoMapperXmlDemo.Web.Application.Domain.ITweetContract>
+
+<h2>@View.Message</h2>
+<p>
+	<ul id="publicTweets">
+		@{ int count = 0; }
+		@foreach(var tweet in Model){
+			<li class="@if(count % 2 != 0){<text>alt</text>}">
+				<p id="tweetDetails">
+					<img src="@tweet.ProfileImageUrl" alt="" />
+					<a href="http://twitter.com/@tweet.UserName">@tweet.Name</a>
+				<p>
+				<p id="tweetBody">
+					@tweet.Body<br /> 
+					<span id="tweetDate"> @tweet.Created</span>
+				</p>
+			</li>
+			count++;
+		}	
+	</ul>
+</p>
+
