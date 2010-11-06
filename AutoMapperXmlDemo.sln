@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapperXmlDemo.Web", "AutoMapperXmlDemo.Web\AutoMapperXmlDemo.Web.csproj", "{55C0A3FF-8244-493A-9DCD-F7D5A7743BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapperXmlDemo.Tests", "AutoMapperXmlDemo.Tests\AutoMapperXmlDemo.Tests.csproj", "{6BD98DF6-3353-4176-BBB0-1AA3439794EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55C0A3FF-8244-493A-9DCD-F7D5A7743BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C0A3FF-8244-493A-9DCD-F7D5A7743BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C0A3FF-8244-493A-9DCD-F7D5A7743BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C0A3FF-8244-493A-9DCD-F7D5A7743BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD98DF6-3353-4176-BBB0-1AA3439794EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD98DF6-3353-4176-BBB0-1AA3439794EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD98DF6-3353-4176-BBB0-1AA3439794EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD98DF6-3353-4176-BBB0-1AA3439794EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
