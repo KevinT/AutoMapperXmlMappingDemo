@@ -2,7 +2,7 @@
 {
     public interface ITweetContract
     {
-        ulong Id { get; set; }  // id is larger than an int32 can handle
+        ulong Id { get; set; }
         string Name { get; set; }
         string UserName { get; set; }
         string Body { get; set; }

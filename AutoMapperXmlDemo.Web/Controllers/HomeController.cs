@@ -5,7 +5,8 @@ namespace AutoMapperXmlDemo.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private TwitterTimelineRetriever _twitterTimelineRetriever; 
+        private TwitterTimelineRetriever _twitterTimelineRetriever;
+
         public ActionResult Index()
         {
             _twitterTimelineRetriever = new TwitterTimelineRetriever();

@@ -12,25 +12,31 @@ namespace AutoMapperXmlDemo.Web.Application.Maps
             Mapper.CreateMap<XElement, ITweetContract>()
                 .ForMember(
                     dest => dest.Id,
-                    options => options.ResolveUsing<XElementResolver<ulong>>().FromMember(source => source.Element("id")))
+                    options => options.ResolveUsing<XElementResolver<ulong>>()
+                        .FromMember(source => source.Element("id")))
                 .ForMember(
                     dest => dest.Name,
-                    options => options.ResolveUsing<XElementResolver<string>>().FromMember(
-                        source => source.Element("user").Descendants("name").Single()))
+                    options => options.ResolveUsing<XElementResolver<string>>()
+                        .FromMember(source => source.Element("user")
+                            .Descendants("name").Single()))
                 .ForMember(
                     dest => dest.UserName,
-                    options => options.ResolveUsing<XElementResolver<string>>().FromMember(
-                        source => source.Element("user").Descendants("screen_name").Single()))
+                    options => options.ResolveUsing<XElementResolver<string>>()
+                        .FromMember(source => source.Element("user")
+                            .Descendants("screen_name").Single()))
                 .ForMember(
                     dest => dest.Body,
-                    options => options.ResolveUsing<XElementResolver<string>>().FromMember(source => source.Element("text")))
+                    options => options.ResolveUsing<XElementResolver<string>>()
+                        .FromMember(source => source.Element("text")))
                 .ForMember(
                     dest => dest.ProfileImageUrl,
-                    options => options.ResolveUsing<XElementResolver<string>>().FromMember(
-                        source => source.Element("user").Descendants("profile_image_url").Single()))
+                    options => options.ResolveUsing<XElementResolver<string>>()
+                        .FromMember(source => source.Element("user")
+                            .Descendants("profile_image_url").Single()))
                 .ForMember(
                     dest => dest.Created,
-                    options => options.ResolveUsing<XElementResolver<string>>().FromMember(source => source.Element("created_at")));
-        }   
+                    options => options.ResolveUsing<XElementResolver<string>>()
+                        .FromMember(source => source.Element("created_at")));
+        }
     }
 }
